@@ -17,9 +17,9 @@ To start a test web server for the application, run:
     -or-
     lein run -m rk_project.handler
 
-example, equivalent, URL styles: 
-  REST-like   : http://localhost:3000/actor/Jennifer+Garner
-  query string: http://localhost:3000/actor?name=Jennifer+Garner
+example queries:
+    REST-like   : http://localhost:<port>/actor/Jennifer+Garner
+    query string: http://localhost:<port>/actor?name=Jennifer+Garner
 
 ## License
 

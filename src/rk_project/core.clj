@@ -7,8 +7,12 @@
 (defn get-actor-data
   "get actor data from imdb call"
   [actor-name]
-  (println "getting actor " actor-name)
+  (println (str "DEBUG: getting actor '" actor-name "'"))
   (let [response
         (client/get imdb-url
-                    {:accept :json, :query-params {"json" "1", "nr" "1", "nm" "1", "q" actor-name}})]
+            {:accept :json
+             :query-params {"json" "1"
+                            "nr" "1"
+                            "nm" "on"
+                            "q" actor-name}})]
     response))
