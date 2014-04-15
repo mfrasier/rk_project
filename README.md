@@ -11,9 +11,11 @@ You will need [Leiningen][1] 1.7.0 or above installed.
 
 ## Running
 
-To start a web server for the application, run:
+To start a test web server for the application, run:
 
     lein ring server
+    -or-
+    lein run -m rk_project.handler
 
 example, equivalent, URL styles: 
   REST-like   : http://localhost:3000/actor/Jennifer+Garner
